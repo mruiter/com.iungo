@@ -66,6 +66,7 @@ class DriverWaterMeter extends Homey.Driver {
 			let deviceObj = {
 				name			: state.iungo._waterMeters[water_meter].name,
 				data 			: { iungo_id: state.iungo.id, id: water_meter  },
+				capabilities	: capabilities
 			};
 
 			if( typeof iconsMap[ state.iungo._waterMeters[water_meter].modelId ] === 'string' ) {
